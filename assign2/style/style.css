@@ -1,0 +1,798 @@
+/*
+filename: style.css
+author: Joshua White
+created: 04/04/22
+modified by: Shreeya Shrestha
+last modified: 08/04/22
+description:  COS10026 Assignment 1 (Group)
+*/
+
+* {
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.a-index {
+    float: left;
+}
+
+.header-index {
+    height: 80px;
+
+}
+
+.index-title {
+    height: 80px;
+}
+
+#header-title {
+    color: white;
+    font: 70px 'Times New Roman', Times, serif;
+    text-align: center;
+    border-bottom: 14px double white;
+    padding-bottom: 30px;
+    background-image: url("ZEN5-A.jpg");
+    padding-top: 30px;
+}
+
+#head1 {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#common_header {
+    display: block;
+    margin-top: 0px;
+    background-image: url("ZEN5-A.jpg");
+    border-bottom: 1em double white;
+    text-align: left;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    font: 17px Arial, sans-serif;
+    color: white;
+    margin: 1%;
+    padding: 0.7%;
+    border: 3.5px solid white;
+}
+
+#common_header :hover {
+    border-color: lightblue;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/*topic page individual header*/
+#page_header1 {
+    display: block;
+    padding-left: 18%;
+    background-color: rgb(5, 5, 66);
+
+    position: relative;
+    animation-name: content;
+    animation-duration: 2s;
+    /* animation-fill-mode: backwards; */
+}
+
+@keyframes content {
+    0% {
+        left: -5000px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+a.page_nav {
+    background-color: #051531;
+    color: whitesmoke;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+
+a.page_nav:hover,
+a.page_nav:focus {
+    background-color: whitesmoke;
+    color: #051531;
+}
+
+#divider {
+    border-top: 5px solid #051531;
+
+}
+
+img {
+    position: relative;
+    display: block;
+    float: right;
+    clear: both;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
+    margin: 13px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+figure {
+    width: 40%;
+    
+}
+
+figcaption {
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 2em;
+}
+
+#topic_description,
+#history {
+    margin-top: 2%;
+    color: black;
+    font-family: 'Lucida Sans';
+}
+
+#first {
+    font-family: 'Lucida Sans';
+    display: block;
+    margin: auto;
+    width: 95%;
+    padding: 1%;
+    background-color: lightcyan;
+    border: 0.1em inset darkblue;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+
+#first:hover {
+    box-shadow: 10px 10px 5px grey;
+    border: 0.2em inset darkblue;
+}
+
+section {
+    margin: 1%;
+    padding: 2%;
+}
+
+#importance {
+    font-size: 1.5em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+ol {
+    list-style-type: lower-roman;
+    margin: 1em;
+}
+
+.name {
+    font-weight: 700;
+}
+
+#second {
+    padding: 1%;
+}
+
+
+#part_2 {
+    padding: 10px;
+    background: rgba(3, 66, 166, 0.3);
+    border-radius: 5px;
+}
+
+#part_2:hover {
+    border: 3px solid darkblue;
+    box-shadow: 10px 10px 5px grey;
+}
+
+section aside {
+    display: block;
+    float: right;
+    clear: both;
+    width: 30%;
+    border: 5px double darkblue;
+    border-radius: 5px;
+    padding: 1%;
+    background: rgb(98, 145, 255, 0.3);
+    box-shadow: 10px 10px 5px grey;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th {
+    background: rgba(3, 11, 239, 0.47);
+    font-size: large;
+}
+
+td {
+    background: rgba(41, 69, 208, 0.3);
+    padding: 1%;
+}
+
+footer {
+    background-color: #051531;
+}
+
+/********************************* Drop up *******************************************************/
+.dropup {
+    float: left;
+    clear: both;
+    display: block;
+}
+
+.button {
+    background-color: #295ba1;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    font-style: italic;
+}
+
+.dropup {
+    position: relative;
+}
+
+.mail_links {
+    display: none;
+    position: absolute;
+    bottom: 48px;
+    background-color: #89a1d7;
+    min-width: 155px;
+    z-index: 1;
+}
+
+.mail_links a {
+    color: black;
+    padding: 10px 14px;
+    display: block;
+}
+
+.mail_links a:hover {
+    background-color: rgb(197, 224, 223)
+}
+
+.dropup:hover .mail_links {
+    display: block;
+}
+
+.dropup:hover .button {
+    background-color: #1f72a9;
+}
+
+.uni {
+    margin-left: 5%;
+    text-align: center;
+    background-color: #295ba1;
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px;
+    transform: translateX(400px);
+    font-style: italic;
+}
+
+.uni:hover {
+    background-color: #1f72a9;
+}
+
+.uni a {
+    color: white;
+}
+
+.home {
+    float: right;
+    text-align: center;
+    background-color: #295ba1;
+    display: block;
+    font-size: 15px;
+    padding: 15px;
+    font-style: italic;
+}
+
+.home:hover {
+    background-color: #1f72a9;
+}
+
+.home a {
+    color: white;
+}
+
+hr {
+    border-top: 2px dashed #051531;
+}
+
+/* Quiz page */
+
+#background-pallete {
+    background-color: #f9f8f8;
+}
+
+.secondary-pallete {
+    background-color: #fffffe;
+    /* #fffffe */
+    border-radius: 10px;
+    margin: 10px;
+    border-color: #0d0d0d;
+    padding: 10px;
+    height: 100px;
+}
+
+.content-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+
+#studentnumber {
+    margin-top: 20px;
+}
+
+#top-field {
+    padding-bottom: 40px;
+}
+
+.content-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.main-buttons {
+    color: white;
+    background-color: #250c9d;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+
+.main-buttons:hover {
+    font-size: large;
+    box-shadow: 10px 10px 5px grey;
+}
+
+form {
+    background-color: #fffffe;
+}
+
+#head1 {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+
+/* INDEX */
+#index-body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(2, 13, 47);
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+    font-size: large;
+    background-image: url(giphy2.jpg);
+    background-repeat: no-repeat;
+    /*background-position-x: 50%;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#headindex {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+#showcase {
+    height: 300px;
+    font-size: 60px;
+    line-height: 1.3px;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+    0% {
+        top: 50px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+#content {
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes content {
+    0% {
+        left: -10000px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.container a {
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: crimson 1px solid;
+    margin: 50px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    transform: rotateY(180deg);
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#uni-id {
+    margin-left: -55%;
+}
+
+/* ENHANCEMENTS */
+.div2,
+.div3 {
+    height: 50vh;
+    width: 90vw;
+    margin: auto;
+}
+
+.div1 {
+    /*   */
+    height: 50vh;
+    width: 40vw;
+    margin-left: 0;
+}
+
+.div2,
+.div3 {
+    display: flex;
+}
+
+.div1,
+.div2,
+.div21,
+.div22,
+.div3,
+.div31,
+.div32 {
+    margin: 20px;
+}
+
+#header1 {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.animation1 {
+    height: 50px;
+    width: 50px;
+    border: 4px solid purple;
+    margin: 5px;
+    display: inline-block;
+    transform: translate(200px, 50px);
+    animation-name: move;
+    animation-duration: 4s;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes move {
+    0% {
+        background-color: black;
+    }
+
+    25% {
+        background-color: purple;
+        transform: translate(1220px, 50px);
+        border-radius: 100%;
+    }
+
+    50% {
+        background-color: rgb(24, 168, 173);
+        transform: translate(1220px, 200px);
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid rgb(203, 128, 41);
+        border-top: 0;
+    }
+
+    75% {
+        background-color: pink;
+        transform: translate(200px, 200px);
+        border-radius: 100%;
+    }
+
+    100% {
+        background-color: black;
+        /* transform: translatey(); */
+        border-radius: 0%;
+    }
+}
+
+
+#para {
+    transform: translate(300px, 180px);
+    background-color: lightblue;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 32%;
+}
+
+.div2,
+.div3 {
+    display: flex;
+    flex-direction: column;
+}
+
+#page_header {
+    display: block;
+    padding-left: 18%;
+    background-color: rgb(5, 5, 66);
+
+    position: relative;
+    display: block;
+    animation-name: content;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+    /* animation-fill-mode: backwards; */
+}
+
+@keyframes content {
+    0% {
+        left: -5000px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.enhancement_full {
+    padding: 0%;
+    margin: 0%;
+    background-color: #5665c9;
+}
+
+/**** SIGNUP LOGIN PAGE ****/
+#text {
+
+    height: 8%;
+    border-radius: 5px;
+    padding: 0.8%;
+    border: solid thin #aaa;
+    width: 70%;
+}
+
+#button {
+
+    padding: 10px;
+    width: 100px;
+    color: white;
+    background-color: lightblue;
+    border: none;
+    margin-left: 5%;
+}
+
+#box {
+
+    background-color: grey;
+    margin: auto;
+    width: 35%;
+    padding: 2%;
+}
+
+
+/**** ENHANCEMENT2 ****/
+#showcase{
+    height:250px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+  }
+  
+#title{
+    width: 100%;
+    margin: auto;
+}
+
+#line{
+    background-color: #000;
+    height: 3px;
+    width: 100%;
+    margin: auto;
+}
+
+#title p{
+    font-family: 'Lucida Sans';
+    font-size: 35px;
+}
+
+#atitle{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    margin-top: 1px;
+}
+
+#atitle p{
+    font-family: 'Lucida Sans';
+    font-size: 25px;
+}
+
+#btitle{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    margin-top: 1px;
+}
+
+#btitle p{
+    font-family: 'Lucida Sans';
+    font-size: 25px;
+}
+
+#showcase h1{
+    font-size:50px;
+    line-height:1.2;
+  }
+  
+#showcase p{
+    font-size:20px;
+  }
+  
+#showcase .button{
+    font-size:18px;
+    text-decoration:none;
+    color:#010110;
+    border:#010110 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+    margin-top:20px;
+  }
+  
+#showcase .button:hover{
+    background:#010110;
+    color: #010110;
+}
+  
+#section-a{
+    width: 100%;
+    margin: auto;
+}
+/* #section-a{
+    font-family: 'Lucida Sans';
+    display: flex;
+    margin: auto;
+    width: 95%;
+    padding: 1%;
+    background-color: lightcyan;
+    border: 0.1em inset darkblue;
+    border-radius: 5px;
+    margin-bottom: 2%;
+} */
+
+#full{
+    font-family: 'Lucida Sans';
+    display: flex;
+    margin: auto;
+    width: 90%;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+#full img{
+    height: 330px;
+    width: 576px;
+    float: right;
+}
+
+#q1{
+    font-family: 'Lucida Sans';
+    display: flex;
+    margin: auto;
+    width: 90%;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+#q1 img{
+    height: 115px;
+    width: 409px;
+    float: right;
+}
+
+#p3{
+    font-family: 'Lucida Sans';
+    margin: auto;
+    width: 90%;
+    margin-bottom: 2%;
+}
+
+#p3 img{
+    float: none;
+    height: 30%;
+    width: 30%;
+}
+ 
+#sec2full{
+    font-family: 'Lucida Sans';
+    display: flex;
+    margin: auto;
+    width: 90%;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+#sec2full img{
+    height: 75%;
+    width: 75%;
+    float: right;
+}
+
+#section-b{
+    padding:20px;
+    color:#000;
+    text-align:center;
+}

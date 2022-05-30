@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" id="background-pallete">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ali Mohammad Jobaer" />
+  <title>PHP Enhancement</title>
+  <link href="style/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;1,300;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+  <h1 id="header-title">PHP Enhancements</h1>
+  <header id="head1">
+    <nav class="header-index" id="common_header">
+      <a class="a-index" href="index.php">Homepage</a>
+      <a class="a-index" href="topic.php">About IoT</a>
+      <a class="a-index" href="quiz.php">Quiz</a>
+      <a class="a-index" href="enhancements.html">Enhancements</a>
+      <a class="a-index" href="login.php">Manage</a>
+      <a class="a-index" href="enhancement2.html">PHP Enhancements</a>
+    </nav>
+  </header>
+  <p id="showcase">Welcome to the enhancement page for php</p>
+  <p id="line"></p>
+  <div id="title">
+    <p>There are two enhancements done in the php part</p>
+  </div>
+  <div id="atitle">
+    <p>Enhancement 1:</p>
+  </div>
+  <div id="div-a">
+    <div id="full">
+      <p>The first enhancement which was done was normalising the tables.</br>
+        Normalisation, in database management, is a way to ensure less redundancy and a more reliable and accurate data
+        structures leading to better data integrity.</br>
+        When building the Attempts table, we observed that the student ID, first name and last name were repeated for
+        each attempt that the student made.
+        Instead of keeping this redundancy in our database, we split the Attempts table into two - Student and Attempts.
+      </p>
+      <img src="style/sreeya.png" alt="Enhancementforphp" title="Normalising the tables">
+    </div>
+    <div id="q1">
+      <p>If the Student table does not already exist in our database, we create it. If it does, we insert verified
+        student attempt records into this database only if it is the student's first attempt at the quiz.
+        If the student record already exists, the required data are inserted into the Attempts table only.
+      </p>
+      <img src="style/query1.png" alt="query1" title="..">
+    </div>
+  </div>
+  <div id="atitle">
+    <p>Enhancement 2:</p>
+  </div>
+  <div id="div-b">
+    <div id="sec2full">
+      <img src="style/login.png" alt="Enhancementforphp" title="Normalising the tables">
+    </div>
+    <p>To limit the access into manage.php page, we have created a login.php that opens first. The access to manage.php
+      is only allowed if correct credentials are entered into the login page.</br>
+      The page also has an option to sign up where a new supervisor can register himself and his details will be stored
+      in the database in a table named 'users'. The login page takes the username finds the corresponding passwords from
+      the database and compares the input password with the corresponding password. If the two match, access is granted
+      and if not, an error message is displayed.</p>
+  </div>
+  <footer>
+    <div class="dropup">
+      <button class="button">Email the Creators!</button>
+      <div class="mail_links">
+        <a href="mailto:103831863@swin.edu.au">Shreeya Shrestha</a>
+        <a href="mailto:102363543@swin.edu.au">Joshua White</a>
+        <a href="mailto:103818882@swin.edu.au">Joy</a>
+        <a href="mailto:103835483@swin.edu.au">Ali</a>
+        <a href="mailto:103531273@swin.edu.au">Ankit</a>
+      </div>
+    </div>
+    <div class="uni">
+      <a href="https://www.swinburne.edu.au/">Swinburne Homepage</a>
+    </div>
+    <div class="home">
+      <a href="index.html">Back to Homepage</a>
+    </div>
+  </footer>
+</body>
+
+</html>

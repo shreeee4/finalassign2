@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhancements</title>
+  <meta name="author" content="Ankit Malik" />
+  <meta name="editor" content="Ali Mohammad Jobaer" />
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header id="header1">
+    <h1 id="header-title">Enhancements</h1>
+    <nav id="common_header">
+      <a href="index.php">Homepage</a>
+      <a href="topic.php">About IoT</a>
+      <a href="quiz.php">Quiz</a>
+      <a href="enhancements.html">Enhancements</a>
+      <a href="login.php">Manage</a>
+      <a href="enhancement2.html">PHP Enhancements</a>
+    </nav>
+  </header>
+  <section class="enhancement_full">
+    <div class="div1">
+      <p id="para">
+        Out of the many enhancements used on topic.html, the following two were
+        the most impactful.
+      </p>
+      <div class="animation1"></div>
+    </div>
+    <div class="div2">
+      <div class="div21">
+        <h2>Animation on Page Header</h2>
+        <p class="para2">
+          The page headers are made to slide into the screen from the left to
+          right and it is achieved by styling the #page_header ID with the
+          animation property. Using the sub-properties of the animation property
+          like the animation-name, animation-duration and animation-fill-mode,
+          we have configured the features that we want our animation to have. We
+          have then used keyframes to mark the position of the shot at the
+          specific points allowing us to have a smooth transition in the
+          animation. For the page header, we have configured the animation
+          duration as 2s and the animation moving from left to right stopping
+          towards the center of the page.
+        </p>
+        <h3>This property can be seen in use below.</h3>
+      </div>
+      <div class="div22">
+        <header>
+          <nav id="page_header">
+            <a href="#topic_description" class="page_nav">What is Internet of Things?</a>
+            <a href="#importance" class="page_nav">Importance of IoT</a>
+            <a href="#history" class="page_nav">History of IoT</a>
+            <a href="#future" class="page_nav">Future of IoT</a>
+            <a href="#vs" class="page_nav">IoT vs Cloud Computing</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div class="div3">
+      <div class="div31">
+        <h2>Drop-up on Footer Content</h2>
+        <p class="para2">
+          We first create the class for the element where we want the drop-up
+          feature. Since the feature was used on our 'Email the Creators'
+          button, a drop-up class using 'div' was created. A button with class
+          button was created within the .dropup class and the button was styled
+          according to preference. For the drop-up content, a .mail_links class
+          was created with 'a href' linking the mail of each group member. The
+          .mail_links was styled such that its 'display' remained 'hidden'
+          initially and upon hovering over the .dropup class, it would 'display'
+          as a 'block'.
+        </p>
+        <h3>This property can be seen in use below when you hover over the 'Email the Creators' button.</h3>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="dropup">
+      <button class="button">Email the Creators!</button>
+      <div class="mail_links">
+        <a href="mailto:103831863@swin.edu.au">Shreeya Shrestha</a>
+        <a href="mailto:102363543@swin.edu.au">Joshua White</a>
+        <a href="mailto:103818882@swin.edu.au">Joy</a>
+        <a href="mailto:103835483@swin.edu.au">Ali</a>
+        <a href="mailto:103531273@swin.edu.au">Ankit</a>
+      </div>
+    </div>
+    <div class="uni">
+      <a href="https://www.swinburne.edu.au/">Swinburne Homepage</a>
+    </div>
+    <div class="home">
+      <a href="index.html">Back to Homepage</a>
+    </div>
+  </footer>
+</body>
+
+</html>
